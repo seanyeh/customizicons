@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Customizicons - Generate Custom GitHub Identicons</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="pocketgrid.min.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>
+                Create your own identicon!
+            </h1>
+            <canvas id="canvas"></canvas>
+
+            <div id="color"></div>
+            <!-- H -->
+            <div class="block-group">
+                <span class="block b2">H</span>
+                <span class="block b8">
+                    <input id="H" type="range" min="0" max="360" value="0" class="slider">
+                </span>
+            </div>
+            <!-- S -->
+            <div class="block-group">
+                <span class="block b2">S</span>
+                <span class="block b8">
+                    <input id="S" type="range" min="0" max="100" value="70" class="slider">
+                </span>
+            </div>
+            <!-- L -->
+            <div class="block-group">
+                <span class="block b2">L</span>
+                <span class="block b8">
+                    <input id="L" type="range" min="0" max="100" value="50" class="slider">
+                </span>
+            </div>
+
+            <div class="block-group">
+                <a href="#" class="block b5" onclick="initGrid()">
+                    <div>Clear</div>
+                </a>
+                <a href="#" class="block b5" onclick="getImageURL()">
+                    <div>Get Image</div>
+                </a>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
